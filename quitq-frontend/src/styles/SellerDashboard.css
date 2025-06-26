@@ -1,0 +1,217 @@
+/* Reuse global styles from LandingPage.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.seller-dashboard {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.seller-dashboard h2 {
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.seller-dashboard h3 {
+  font-size: 22px;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.seller-dashboard h4 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.seller-dashboard p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+/* Form Styles */
+.product-form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.product-form .form-control,
+.product-form .form-select {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 8px 12px;
+  background: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.product-form .form-control:focus,
+.product-form .form-select:focus {
+  border-color: #ff4e50;
+  outline: none;
+}
+
+.product-form .form-label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.product-form textarea.form-control {
+  border-radius: 10px;
+  min-height: 100px;
+}
+
+/* Button Styles */
+.add-product-btn {
+  padding: 10px 20px;
+  background: #ff4e50;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.add-product-btn:hover {
+  background: #e43e40;
+}
+
+.delete-btn {
+  padding: 5px 10px;
+  background: #ff4e50;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  font-size: 12px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background: #e43e40;
+}
+
+/* Table Styles */
+.product-table {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-table th,
+.product-table td {
+  text-align: center;
+  vertical-align: middle;
+  font-size: 14px;
+  padding: 12px;
+}
+
+.product-table th {
+  background: #f9f9f9;
+  color: #333;
+  font-weight: 600;
+}
+
+.product-table td {
+  color: #666;
+}
+
+.product-table tr:hover {
+  background: #ffebeb;
+}
+
+/* Seller Details Section */
+.seller-details {
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .seller-dashboard {
+    padding: 20px;
+    margin: 20px 10px;
+  }
+
+  .seller-dashboard h2 {
+    font-size: 24px;
+  }
+
+  .seller-dashboard h3 {
+    font-size: 20px;
+  }
+
+  .seller-dashboard h4 {
+    font-size: 18px;
+  }
+
+  .product-form {
+    max-width: 100%;
+  }
+
+  .product-table th,
+  .product-table td {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .seller-details {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .seller-dashboard {
+    padding: 15px;
+    margin: 15px 5px;
+  }
+
+  .seller-dashboard h2 {
+    font-size: 20px;
+  }
+
+  .seller-dashboard h3 {
+    font-size: 18px;
+  }
+
+  .seller-dashboard h4 {
+    font-size: 16px;
+  }
+
+  .product-form .form-control,
+  .product-form .form-select {
+    padding: 6px 10px;
+  }
+
+  .add-product-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .delete-btn {
+    padding: 4px 8px;
+    font-size: 11px;
+  }
+
+  .product-table th,
+  .product-table td {
+    font-size: 12px;
+    padding: 6px;
+  }
+}

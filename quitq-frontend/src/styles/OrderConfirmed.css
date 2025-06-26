@@ -1,0 +1,281 @@
+.order-confirmed-page {
+  width: 100vw;
+  min-height: 100vh;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.order-confirmed-section {
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 160px);
+}
+
+.confirmation-content {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.thank-you {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.tick-mark {
+  font-size: 48px;
+  color: #28a745;
+  margin-bottom: 20px;
+}
+
+.order-status {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.order-items {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.order-items h3 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.order-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.order-item-image {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.order-item-details {
+  flex: 1;
+}
+
+.order-item-details p {
+  font-size: 14px;
+  color: #333;
+  margin: 2px 0;
+}
+
+.order-item-details h4 {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.view-order-btn {
+  padding: 10px 20px;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.view-order-btn:hover {
+  background: #218838;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 160px);
+  text-align: center;
+}
+
+.error {
+  text-align: center;
+  color: #dc3545;
+  padding: 20px;
+}
+
+/* Navbar and Footer styles */
+.navbar {
+  padding: 12px 0;
+  min-height: 80px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100vw;
+  margin: 0;
+}
+
+.navbar .logo {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ff4e50;
+  margin-left: 15px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-right: 15px;
+}
+
+.nav-link {
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ff4e50;
+}
+
+.footer {
+  background: #333;
+  color: #fff;
+  padding: 40px 15px;
+  width: 100vw;
+  margin: 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  padding: 0 15px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+  color: #ff4e50;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  margin-top: 20px;
+  width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .order-confirmed-section {
+    padding: 20px 0;
+  }
+
+  .confirmation-content {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  .thank-you {
+    font-size: 28px;
+  }
+
+  .tick-mark {
+    font-size: 40px;
+  }
+
+  .order-status {
+    font-size: 20px;
+  }
+
+  .order-items h3 {
+    font-size: 18px;
+  }
+
+  .order-item-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .view-order-btn {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .thank-you {
+    font-size: 24px;
+  }
+
+  .tick-mark {
+    font-size: 36px;
+  }
+
+  .order-status {
+    font-size: 18px;
+  }
+
+  .order-items h3 {
+    font-size: 16px;
+  }
+
+  .view-order-btn {
+    font-size: 12px;
+  }
+}

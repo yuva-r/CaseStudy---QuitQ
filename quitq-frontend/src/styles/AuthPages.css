@@ -1,0 +1,173 @@
+/* AuthPages.css */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fef9f4;
+  font-family: 'Poppins', sans-serif;
+  display: flex; /* Ensure body centers its content */
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px; /* Slightly wider to accommodate the border */
+  padding: 20px;
+  background-color: #ffffff; /* White background for the entire content */
+  border: 2px solid #f07c40; /* Outermost orange border around the entire content */
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(51, 48, 48, 0.908);
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #f07c40;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #0f243e;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+form {
+  background-color: #ffffff; /* Same background as the wrapper */
+  padding: 40px 30px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Input field styling with icon support */
+input {
+  width: 100%;
+  padding: 15px 50px 15px 50px; /* Space for icons on both sides */
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600; /* Bolder text for the actual input */
+  color: #0f243e; /* Darker color for the input text */
+  background-color: #fff; /* Changed to white background */
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #f07c40;
+}
+
+/* Style the placeholder text to be lighter */
+input::placeholder {
+  color: #ccc; /* Lighter color for placeholder */
+  font-weight: 300; /* Lighter font weight */
+  opacity: 0.7; /* Slight transparency */
+}
+
+/* Hide the label since we're using placeholders */
+label {
+  display: none;
+}
+
+/* Icon styling (left side) */
+.form-group::before {
+  content: '';
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* Specific icons for each input field */
+.form-group:nth-child(1)::before {
+  background-image: url('https://img.icons8.com/ios-filled/50/0f243e/user.png'); /* Full Name icon */
+}
+
+.form-group:nth-child(2)::before {
+  background-image: url('https://img.icons8.com/ios-filled/50/0f243e/user.png'); /* Username icon (same as Full Name for now) */
+}
+
+.form-group:nth-child(3)::before {
+  background-image: url('https://img.icons8.com/ios-filled/50/0f243e/email.png'); /* Email icon */
+}
+
+.form-group:nth-child(4)::before {
+  background-image: url('https://img.icons8.com/ios-filled/50/0f243e/phone.png'); /* Contact number icon (for RegisterPage) */
+}
+
+.form-group:nth-child(5)::before,
+.form-group:nth-child(2)::before { /* Adjust for LoginPage password field */
+  background-image: url('https://img.icons8.com/ios-filled/50/0f243e/lock.png'); /* Password icon */
+}
+
+/* Checkmark styling (right side) */
+.form-group::after {
+  content: '';
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url('https://img.icons8.com/ios-filled/50/00cc00/checkmark.png'); /* Green checkmark */
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show checkmark when input is valid */
+input:valid ~ .form-group::after,
+input:not(:placeholder-shown) ~ .form-group::after {
+  opacity: 1;
+}
+
+button {
+  width: 100%;
+  padding: 15px;
+  background-color: #f07c40;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e76f35;
+}
+
+.login-link {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #0f243e;
+}
+
+.login-link a {
+  color: #f07c40;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

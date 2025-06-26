@@ -1,0 +1,242 @@
+/* Scope all styles to .checkout-page */
+.checkout-page {
+  width: 100vw;
+  min-height: 100vh;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.checkout-page .checkout-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 15px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.checkout-page .checkout-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.checkout-page .checkout-content {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.checkout-page .billing-info,
+.checkout-page .order-summary {
+  flex: 1;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-height: 250px;
+  width: 100%;
+}
+
+.checkout-page .billing-info h2,
+.checkout-page .order-summary h2,
+.checkout-page .payment-section h2 {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.checkout-page .user-details p,
+.checkout-page .address-details p {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0;
+}
+
+.checkout-page .checkout-cart-items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.checkout-page .cart-item {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+
+.checkout-page .product-image {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+
+.checkout-page .item-details p {
+  font-size: 14px;
+  color: #333;
+  margin: 2px 0;
+}
+
+.checkout-page .item-details p:first-child {
+  color: #ff4e50;
+  font-weight: 500;
+}
+
+.checkout-page .total-cost {
+  margin-top: 10px;
+  text-align: right;
+}
+
+.checkout-page .total-cost h3 {
+  font-size: 18px;
+  color: #ff4e50;
+}
+
+.checkout-page .payment-section {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.checkout-page .payment-method {
+  margin-bottom: 15px;
+}
+
+.checkout-page .payment-method label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.checkout-page .payment-method select {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.checkout-page .payment-method select:focus {
+  border-color: #ff4e50;
+}
+
+.checkout-page .upi-payment p {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.checkout-page .upi-qr {
+  width: 120px;
+  height: 120px;
+  border-radius: 4px;
+}
+
+.checkout-page .card-payment {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: none;
+}
+
+.checkout-page .card-inputs {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkout-page .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout-page .form-group label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.checkout-page .form-group input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  background: #fff;
+  opacity: 1;
+  transition: border-color 0.3s ease;
+}
+
+.checkout-page .form-group input:focus {
+  border-color: #ff4e50;
+}
+
+.checkout-page .submit-payment {
+  padding: 10px 20px;
+  background: #ff4e50;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+  width: auto;
+}
+
+.checkout-page .submit-payment:hover {
+  background: #e43e40;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .checkout-page .checkout-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .checkout-page .billing-info,
+  .checkout-page .order-summary {
+    min-height: auto;
+  }
+
+  .checkout-page .checkout-cart-items {
+    max-height: 300px;
+  }
+
+  .checkout-page .checkout-container {
+    padding: 15px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .checkout-page .checkout-title {
+    font-size: 24px;
+  }
+
+  .checkout-page .billing-info h2,
+  .checkout-page .order-summary h2,
+  .checkout-page .payment-section h2 {
+    font-size: 18px;
+  }
+
+  .checkout-page .submit-payment {
+    font-size: 14px;
+  }
+}
